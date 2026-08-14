@@ -34,7 +34,7 @@ export function Hero() {
             {brand.positioning}
           </p>
 
-          <div className="flex flex-wrap items-center gap-4 md:col-span-6 md:justify-end" style={step(3)}>
+          <div className="flex flex-wrap items-center gap-4 md:col-span-6 md:justify-end md:pr-40" style={step(3)}>
             <a href="#contact" data-cursor="Talk">
               <MagneticButton type="button">Start a conversation</MagneticButton>
             </a>
