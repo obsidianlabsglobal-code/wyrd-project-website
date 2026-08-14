@@ -121,6 +121,8 @@ export function Assistant() {
           </button>
         </form>
       </div>
+      )}
+
     </>
   );
 }
