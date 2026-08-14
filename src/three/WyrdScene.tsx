@@ -72,7 +72,7 @@ function Lattice({ progress, pointer, count }: SceneProps & { count: number }) {
     <group ref={group}>
       <instancedMesh ref={mesh} args={[undefined, undefined, count]} castShadow={false}>
         <boxGeometry args={[1, 1, 1]} />
-        <meshStandardMaterial color="#FCFAF5" roughness={0.55} metalness={0.05} />
+        <meshStandardMaterial color="#FCFAF5" roughness={0.55} metalness={0.05} transparent opacity={0.72} />
       </instancedMesh>
       <mesh>
         <icosahedronGeometry args={[1.48, 2]} />
