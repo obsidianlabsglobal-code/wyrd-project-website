@@ -71,7 +71,7 @@ export function Assistant() {
         onClick={() => setOpen((v) => !v)}
         aria-expanded={open}
         aria-controls="wyrd-assistant"
-        className="fixed bottom-5 right-5 z-[70] rounded-full border border-border bg-porcelain px-5 py-3 text-xs font-semibold tracking-[0.14em] uppercase shadow-[0_10px_40px_-20px_rgba(23,23,20,0.6)] transition-colors duration-300 hover:border-foreground md:bottom-8 md:right-8"
+        className="fixed bottom-5 right-5 z-[80] rounded-full border border-border bg-porcelain px-5 py-3 text-xs font-semibold tracking-[0.14em] uppercase shadow-[0_10px_40px_-20px_rgba(23,23,20,0.6)] transition-colors duration-300 hover:border-foreground md:bottom-8 md:right-8"
       >
         {open ? "Close" : "Ask WYRD"}
       </button>
