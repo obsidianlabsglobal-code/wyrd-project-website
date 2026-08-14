@@ -15,7 +15,8 @@ export function Contact() {
 
   const onSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    const form = new FormData(event.currentTarget);
+    const formEl = event.currentTarget;
+    const form = new FormData(formEl);
     setStatus("sending");
     setError("");
     try {
@@ -28,7 +29,8 @@ export function Contact() {
       });
       if (result.ok) {
         setStatus("sent");
-        event.currentTarget.reset();
+        formEl.reset();
+
       } else {
         setStatus("error");
         setError(result.error ?? "Something went wrong.");
