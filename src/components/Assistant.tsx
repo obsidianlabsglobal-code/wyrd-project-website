@@ -76,14 +76,15 @@ export function Assistant() {
         {open ? "Close" : "Ask WYRD"}
       </button>
 
+      {open && (
       <div
         id="wyrd-assistant"
         ref={panelRef}
         role="dialog"
         aria-label="Ask WYRD"
-        hidden={!open}
         className="fixed bottom-20 right-4 z-[70] flex h-[min(70vh,32rem)] w-[min(24rem,calc(100vw-2rem))] flex-col overflow-hidden rounded-lg border border-border bg-porcelain shadow-[0_30px_80px_-40px_rgba(23,23,20,0.55)] md:bottom-24 md:right-8"
       >
+
         <div className="border-b border-border px-5 py-4">
           <p className="micro">Ask WYRD</p>
         </div>
