@@ -95,13 +95,14 @@ function Rig({ pointer }: { pointer: React.MutableRefObject<[number, number]> })
 
 export default function WyrdScene({ progress, pointer }: SceneProps) {
   const low = useLowPower();
-  const count = low ? 160 : 420;
+  const count = low ? 110 : 240;
 
   return (
     <Canvas
       dpr={[1, low ? 1.25 : 1.8]}
       gl={{ antialias: !low, alpha: true, powerPreference: "low-power" }}
-      camera={{ position: [0, 0.1, 5.2], fov: 42 }}
+      camera={{ position: [0, 0.1, 6.8], fov: 42 }}
+
       frameloop="always"
     >
       <ambientLight intensity={0.85} color="#F6F2E9" />
